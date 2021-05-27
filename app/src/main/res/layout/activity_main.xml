@@ -195,7 +195,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -233,7 +232,6 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -270,7 +268,55 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/iv_final_digits"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:background="@color/redPrimary"
+        app:layout_constraintTop_toBottomOf="@id/mcv_transfer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_txt_final_digits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartão final"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/iv_final_digits"
+        app:layout_constraintLeft_toLeftOf="@id/iv_final_digits"
+        app:layout_constraintBottom_toBottomOf="@id/iv_final_digits"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tv_value_final_digits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0033"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/iv_final_digits"
+        app:layout_constraintLeft_toRightOf="@id/tv_txt_final_digits"
+        app:layout_constraintBottom_toBottomOf="@id/iv_final_digits"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_less_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_expand_more_white"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/iv_final_digits"
+        app:layout_constraintRight_toRightOf="@id/iv_final_digits"
+        app:layout_constraintBottom_toBottomOf="@id/iv_final_digits"
+        android:layout_marginEnd="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
